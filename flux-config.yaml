@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: flux-config
+  namespace: flux-system
+spec:
+  interval: 5m
+  url: https://github.com/your-repo/flux-config.git
+  ref:
+    branch: main
